@@ -1,0 +1,20 @@
+@use '../../../../vars.scss';
+.story-list-container{
+  td{
+    color:rgb(159, 166, 173);
+    font-size: vars.$medium-text;
+  }
+  /* 
+    Keep the component height the size of the screen minus the header 
+    This keeps the scroll bar under the header which looks nicer
+    Need to escape the scss variable
+  */
+  max-height: calc(100vh - #{vars.$header-height});
+  overflow-y: auto;
+}
+
+.table{
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}

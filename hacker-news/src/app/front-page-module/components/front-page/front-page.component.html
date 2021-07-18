@@ -1,0 +1,10 @@
+<div class="front-page-container">
+  <section class="left-section">
+    <div class="menu-container" *ngIf="showMenu">
+      <links-menu [links]="menuLinks"></links-menu>
+    </div>
+  </section>
+  <section class="main-section">
+    <story-list [scrollThreshold]="90" [stories]="stories$ | async" (nearBottom)="onNearBottomAlert()"></story-list>
+  </section>
+</div>

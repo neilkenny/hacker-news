@@ -1,0 +1,22 @@
+@use '../../../../vars.scss';
+$header-colour: rgb(57, 57, 57);
+
+header{
+  position: fixed;
+  top:0;
+  padding: 0.125rem 1rem;
+  background-color: $header-colour;
+  height: vars.$header-height;
+  width: 100%;
+}
+
+links-menu{
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.brand{
+  color: vars.$color-bright;
+  font-size: vars.$large-text;
+}

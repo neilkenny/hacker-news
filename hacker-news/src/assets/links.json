@@ -1,0 +1,9 @@
+[
+  { "text": "top stories", "url": "https://news.ycombinator.com" },
+  { "text": "past", "url": "https://news.ycombinator.com/front" },
+  { "text": "comments", "url": "https://news.ycombinator.com/newcomments" },
+  { "text": "ask", "url": "https://news.ycombinator.com/ask" },
+  { "text": "show", "url": "https://news.ycombinator.com/show" },
+  { "text": "jobs", "url": "https://news.ycombinator.com/jobs" },
+  { "text": "submit", "url": "https://news.ycombinator.com/submit" }
+]

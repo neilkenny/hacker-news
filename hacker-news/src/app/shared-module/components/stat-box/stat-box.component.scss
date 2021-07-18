@@ -1,0 +1,21 @@
+@use '../../../../vars.scss';
+
+.stat-box-container{
+  border: 0.0625rem dotted vars.$color-understated;
+  padding: 0.2rem;
+  text-align: center;
+  width: 3rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: vars.$color-understated;
+}
+
+.statistic-container{
+  font-size: vars.$large-text;
+}
+
+.text-container{
+  font-size: vars.$tiny-text;
+}

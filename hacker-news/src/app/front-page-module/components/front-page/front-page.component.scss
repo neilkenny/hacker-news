@@ -1,0 +1,17 @@
+@use '../../../../vars.scss';
+
+.front-page-container{
+  margin-top: vars.$header-height;
+  background-color: vars.$bgcolor;
+  display:flex;
+  justify-content: center;
+
+  .menu-container{
+    position: fixed;
+    left: 1rem;
+  }
+  .main-section {
+    display: inline-block;
+    width: 100%;
+  }
+}

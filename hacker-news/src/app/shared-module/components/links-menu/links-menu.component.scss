@@ -1,0 +1,57 @@
+@use '../../../../vars.scss';
+$focused: rgb(61,61,61);
+
+@mixin selectedBar {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 0.5rem;
+  height: 2rem;
+  background-color: vars.$color-standout;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  // For vertical mode
+  flex-direction: column;
+
+  &.horizontal{
+    // For horizontal mode
+    flex-direction: row;
+  }
+
+  li{
+    position: relative !important;
+    font-size: vars.$small-text;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      background-color: $focused;
+    }
+    a {
+      color: wheat;
+    }
+
+    > div{
+      padding: 0.5rem 1rem;
+    }
+    
+    &.selected{
+      height: 100%;
+      
+      &:before{        
+        @include selectedBar();
+      }
+
+      &::after{
+        @include selectedBar();
+        right:0;
+      }
+      background-color: $focused;
+    }
+  }
+}

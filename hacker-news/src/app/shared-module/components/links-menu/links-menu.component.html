@@ -1,0 +1,7 @@
+<nav role="navigation" class="links-menu-container" *ngIf="links">
+  <ul [class.horizontal]="mode === 'horizontal'">
+    <li *ngFor="let link of links" [class.selected]="link.active">
+      <div><a [attr.href]="link.url">{{link.text}}</a></div>
+    </li>
+  </ul>
+</nav>

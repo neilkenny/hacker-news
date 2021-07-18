@@ -1,0 +1,7 @@
+@use '../../../../vars.scss';
+a {
+  color: cadetblue;
+}
+.posted-by{
+  font-size: vars.$small-text;
+}
